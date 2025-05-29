@@ -1,4 +1,3 @@
-
 # EX-06 - Looping
 ## AIM:
 Write a C program to print even numbers ranging from M to N (including M and N values).
@@ -30,13 +29,25 @@ int main() {
     return 0;
 }
 ```
+
 ## OUTPUT:
-![Screenshot 2025-04-27 143813](https://github.com/user-attachments/assets/4b894ff2-7a26-44f2-a5e9-cc4558bad0d9)
+![image](https://github.com/user-attachments/assets/53395d7e-b822-46c4-a0f4-a1d3bfbf1c24)
+
+
+
+
+
+
+
+
+
+
 
 ## RESULT:
 Thus the program to print even numbers ranging from M to N (including M and N values) has been executed successfully
  
  
+
 
 # EX-07-Nested-loop
 
@@ -53,31 +64,28 @@ Write a C program to print the given triangular pattern using loop.
 5.	Continue the loop until you have printed the entire triangular pattern.
 
 ## PROGRAM:
-## PROGRAM:
 ```
 #include<stdio.h>
 int main()
 {
-    int i,n,j;
+    int i,j,n;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(i=n;i>=1;i--)
     {
         for(j=1;j<=i;j++)
         {
-            printf("%d ",j);
+            printf("$");
         }
         printf("\n");
     }
     return 0;
 }
-
 ```
 
+
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/8e207138-28c4-4d36-82c8-99d989c13967)
 
-
-
-![WhatsApp Image 2025-04-27 at 14 23 06_ecb915b9](https://github.com/user-attachments/assets/2b7f4fed-0828-4e18-b6bf-c76a79adc45f)
 
 ## RESULT:
 
@@ -101,43 +109,44 @@ Write a C program to perform addition and subtraction of two numbers using funct
 
 ## PROGRAM:
 ```
-
 #include<stdio.h>
-int add(int,int);
-int sub(int,int);
+void add(int,int);
+void sub(int,int);
 int main()
 {
     int a,b,c,d;
     scanf("%d%d",&a,&b);
-    c = add(a,b);
-    d = sub(a,b);
-    printf("Addition: %d\n",c);
-    printf("Subtraction: %d",d);
+    add(a,b);
+    sub(a,b);
 }
-int add(int x,int y)
+void add(int x,int y)
 {
     int z;
     z = x + y;
-    return z;
+    printf("Addition: %d\n",z);
 }
-int sub(int x,int y)
+void sub(int x,int y)
 {
     int z;
     z = x - y;
-    return z;
+    printf("Subtraction: %d",z);
 }
 
 ```
 
 
 ## OUTPUT:
-![Screenshot 2025-04-27 144029](https://github.com/user-attachments/assets/8a18dfbe-70ed-460a-86ae-71ceedd81540)
+
+
+![image](https://github.com/user-attachments/assets/30b615b4-499b-4f45-9622-3473955095ba)
+
 
 
 
 ## RESULT:
 
 Thus the program to perform addition and subtraction of two numbers using functions has been executed successfully
+ 
  
 
 
@@ -173,12 +182,13 @@ int main()
     printf("%d",sum);
     return 0;
 }
-
 ```
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/2deb5240-8df0-4850-aa89-4d37dc0d883f)
 
-![Screenshot 2025-04-27 144125](https://github.com/user-attachments/assets/b5370853-a818-4d13-a176-a34063fc3e08)
+
+
 
 
 ## RESULT:
@@ -206,7 +216,7 @@ d.	After the loop, print the factorial value.
 ## PROGRAM:
 ```
 #include<stdio.h>
-int main()
+int fact()
 {
     int n,fact=1;
     scanf("%d",&n);
@@ -217,15 +227,16 @@ int main()
     printf("Factorial value is: %d",fact);
     return 0;
 }
+int main()
+{
+    fact();
+}
 
 ```
 
 
-
 ## OUTPUT:
-![Screenshot 2025-04-27 144231](https://github.com/user-attachments/assets/35994c76-704c-47a9-b5df-41b0150fa6e9)
-
-
+![image](https://github.com/user-attachments/assets/d343049d-b91a-40b9-98a9-b35c01a57b5c)
 
 
 ## RESULT:
